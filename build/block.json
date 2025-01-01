@@ -1,0 +1,77 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "b-blocks/test-purpose",
+  "version": "1.0.0",
+  "title": "Accordion",
+  "category": "widgets",
+  "description": "Short description of the Test Purpose",
+  "keywords": [
+    "Accordion"
+  ],
+  "textdomain": "b-blocks",
+  "attributes": {
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "purposeType": {
+      "type": "string",
+      "default": "test"
+    },
+    "colors": {
+      "type": "object",
+      "default": {
+        "color": "black",
+        "bg": "#B1C5A4"
+      }
+    },
+    "according": {
+      "type": "array",
+      "default": [
+        {
+          "que": "Sit amet consectetur velit integer tincidunt sceleries",
+          "ans": "Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus."
+        },
+        {
+          "que": "Sit amet consectetur velit integer tincidunt sceleries",
+          "ans": "Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus."
+        },
+        {
+          "que": "Sit amet consectetur velit integer tincidunt sceleries",
+          "ans": "Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus eues feugiat. Sit amet consectetur velit integer tincidunt sceleries nodalesry volutpat neque fermentum malesuada sceleris quecy massa lacus ultrices eget leo cras odio blandit rhoncus."
+        }
+      ]
+    },
+    "titleStyle": {
+      "type": "object",
+      "default": {
+        "titleBg": "#DFDFDF",
+        "titleColor": "#000000",
+        "border": "20px"
+      }
+    },
+    "answerStyle": {
+      "type": "object",
+      "default": {
+        "answerBg": "#ffffff",
+        "answerColor": "#000000"
+      }
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
